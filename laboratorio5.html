@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilocssLab5.css">
+		<title>Labortorio 5</title>
+	</head>
+	<body>
+		<h1>FORMULARIO DE INSCRIPCION</h1>
+		<div class="container">
+		<form>
+				<fieldset>
+					<legend>Datos personales</legend>
+						<label>Primer Nombre: </label>
+						<input type="text" name="fname" required>
+						<br><br>
+						<label>Primer Apellido: </label>
+						<input type="text" name="lname">
+						<br><br>
+						<label>Correo electrónico: </label>
+						<input type="email" name="email" placeholder="***@***.com">
+						<br><br>
+						<label>Fecha de nacimiento: </label>
+						<input type="date" name="bdate">		
+				</fieldset>
+			<br><br>
+			<fieldset>
+				<legend>Informacion del curso</legend>
+					<label>Curso que desea inscribir</label>
+					<br><br>
+				<select>
+					<option>Programacion</option>
+					<option>Ciberseguridad</option>
+					<option>Inteligencia Artificial</option>
+				</select>
+			
+				<br><br>
+				<label>Modo en que desea tomar el curso</label>
+				<br><br>
+				<input type="radio" id="prese" name="opc" value="prese">
+				<label for="prese">Presencial</label>
+				<br><br>
+				<input type="radio" id="virtual" name="opc" value="virtual">
+				<label for="virtual">Virtual</label>
+				<br><br>
+				<label>Disponibilidad para tomar el curso</label>
+				<br><br>
+				<input type="checkbox" id="morn" name="morn" value="morn">
+				<label for="morn">Horario Mañana Lun-Vie</label>
+				<br><br>
+				<input type="checkbox" id="aft" name="aft" value="aft">
+				<label for="aft">Horario Noche Lun-Vie</label>
+				<br><br>
+				<input type="checkbox" id="week" name="week" value="week">
+				<label for="week">Horario Sábado 6am - 1pm</label>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend>Informacion de usuario</legend>
+				<label>Ingrese su username: </label>
+				<input type="text" name="username" minlength="8" required>
+				<br><br>
+				<label>Contraseña: </label>
+				<input type="password" name="pass" minlength="8"maxlength="12">
+				<br><br>
+			</fieldset>
+			<label>Adjunte el diploma de pregrado: </label>
+			<input type="file" name="file">
+			<br><br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar todo">
+
+		</form>
+		</div>
+	</body>
+</html>
